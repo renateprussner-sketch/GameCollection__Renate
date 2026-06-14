@@ -14,6 +14,19 @@
 
 int main(void)
 {
+    int geheimyahl = 7;
+    int tipp;
+
     printf("Willkommen zu Rate die Zahl 2!\n");
+    printf("Rate die Zahl zwischen 1 und 10: ");
+
+    scanf("%d", &tipp);
+
+    if (tipp == geheimzahl)
+        printf("Gewonnen!\n");
+
+    else 
+        printf("Leider falsch!\n");
+
     return (0);
 }

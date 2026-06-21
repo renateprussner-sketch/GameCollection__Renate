@@ -6,7 +6,7 @@
 /*   By: rprussne <rprussne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 10:42:41 by rprussne          #+#    #+#             */
-/*   Updated: 2026/06/20 09:05:53 by rprussne         ###   ########.fr       */
+/*   Updated: 2026/06/21 07:02:01 by rprussne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int	main(void)
 				printf("Gewonnen!\n");
 				break;
 			}
+			leben--;
 			if (leben == 0)
 			{
 				printf("Verloren! Die Zahl war %d\n", geheimzahl);
@@ -49,7 +50,6 @@ int	main(void)
 			else
 			{
 				printf("Falsch! Leben: %d\n", leben);
-				leben--;
 			}
 		}
 		printf("Nochmal spielen? (j/n): ");
